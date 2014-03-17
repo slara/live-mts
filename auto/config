@@ -1,0 +1,9 @@
+#!/bin/sh
+
+lb config noauto \
+    --architectures i386 \
+    --linux-flavours 486 \
+    --mirror-bootstrap http://ftp.cl.debian.org/ \
+    --mirror-binary http://ftp.cl.debian.org/ \
+    --archive-areas "main contrib non-free" \
+    "${@}"
